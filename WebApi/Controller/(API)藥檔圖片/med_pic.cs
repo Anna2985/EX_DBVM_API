@@ -28,7 +28,7 @@ namespace DB2VM_API.Controller._API_藥檔圖片
             try
             {
                 List<medPicClass> medPicClasses = new List<medPicClass>();
-                for (int i = 1; i < DrugList().Count; i++)
+                for (int i = 0; i < DrugList().Count; i++)
                 {
                     string 藥碼 = DrugList()[i][(int)enum_DrugList.藥碼].ToString();
                     string 藥名 = DrugList()[i][(int)enum_DrugList.藥名].ToString();
